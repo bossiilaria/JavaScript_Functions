@@ -49,4 +49,8 @@ console.log(lifeTimeInches);
 var c = document.getElementById("myCanvas");
 var ctx = c.getContext("2d");
 ctx.rect(20, 20, 150, 100);
+<<<<<<< HEAD
 ctx.stroke();
+=======
+ctx.stroke();
+>>>>>>> d326804252d49a15185995fdff5a33af733f5b0e
