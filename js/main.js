@@ -29,7 +29,7 @@ console.log(myFunc(4, 5));
 */
 
 /*Goal: play with local and global variables - write a function to calculate how tall a person grew over the years and display the result*/
-var lifeTimeInches = 20;
+/*var lifeTimeInches = 20;
 
 var howTall = function(startAge, endAge, inchesPerYear) {
 	totalInches = inchesPerYear * (endAge - startAge);
@@ -44,3 +44,9 @@ console.log(howTall(8, 16, 2));
 
 console.log("Total inches grown:");
 console.log(lifeTimeInches);
+*/
+/*Goal: draw a car made of rectangles and ellipses and make it move across the screen*/
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.rect(20, 20, 150, 100);
+ctx.stroke();
