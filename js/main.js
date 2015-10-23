@@ -45,12 +45,30 @@ console.log(howTall(8, 16, 2));
 console.log("Total inches grown:");
 console.log(lifeTimeInches);
 */
-/*Goal: draw a car made of rectangles and ellipses and make it move across the screen*/
-var c = document.getElementById("myCanvas");
-var ctx = c.getContext("2d");
-ctx.rect(20, 20, 150, 100);
-<<<<<<< HEAD
-ctx.stroke();
-=======
-ctx.stroke();
->>>>>>> d326804252d49a15185995fdff5a33af733f5b0e
+/*Goal: draw a bunch of rectangles*/
+
+var x = 10; //position of the car
+
+
+var draw = function() {
+	
+
+	//build the car
+	var myCanvas = document.getElementById("myCanvas");
+	var ctx = myCanvas.getContext("2d");
+
+	//build the body
+	ctx.fillStyle="red";
+	ctx.fillRect(x+40, 20, 120, 50);
+	ctx.fillRect(x, 70, 200, 70);
+
+	//build the wheels
+	ctx.fillStyle="black";
+	ctx.beginPath();
+	ctx.arc(x+40, 140, 20, 30, 50);
+	ctx.arc(x+170, 140, 20, 30, 50);
+	ctx.fill();
+	
+};
+draw();
+x=x-2;;
