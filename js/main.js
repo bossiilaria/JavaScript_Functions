@@ -71,4 +71,4 @@ var draw = function() {
 	
 };
 draw();
-x=x-2;;
+
