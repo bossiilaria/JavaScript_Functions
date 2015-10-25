@@ -47,13 +47,13 @@ console.log(lifeTimeInches);
 */
 /*Goal: draw a bunch of rectangles*/
 
-var x = 10; //position of the car
 
 
+var x=15; //Car position
 var draw = function() {
 	
-
 	//build the car
+	
 	var myCanvas = document.getElementById("myCanvas");
 	var ctx = myCanvas.getContext("2d");
 
@@ -68,7 +68,7 @@ var draw = function() {
 	ctx.arc(x+40, 140, 20, 30, 50);
 	ctx.arc(x+170, 140, 20, 30, 50);
 	ctx.fill();
-	
 };
 draw();
+
 
